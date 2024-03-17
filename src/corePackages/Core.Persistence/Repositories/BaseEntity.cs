@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Persistence.Repositories
 {
-    public class BaseEntity<TId>
+    public class BaseEntity<TId> : IEntityTimestamps
     {
         public TId Id { get; set; }
 
