@@ -11,5 +11,7 @@ namespace Application.Features.Cars.Commands.Delete
     public class DeleteCarCommand : IRequest<DeletedCarResponse>
     {
         public Guid Id { get; set; }
+        public bool BypassCache { get; }
+        public string CacheKey => "car-list";
     }
 }

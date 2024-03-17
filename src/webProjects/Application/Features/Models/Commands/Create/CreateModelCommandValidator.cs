@@ -13,7 +13,7 @@ namespace Application.Features.Models.Commands.Create
         public CreateModelCommandValidator()
         {
             RuleFor(b => b.Name).NotEmpty().WithMessage(ModelValidatorMessages.NameNotBlank);
-            RuleFor(b => b.Name).Length(3);
+            RuleFor(b => b.Name).MinimumLength(3);
         }
     }
 }

@@ -2,7 +2,9 @@
 using Application.Features.Brands.Commands.Delete;
 using Application.Features.Brands.Commands.Update;
 using Application.Features.Brands.Dtos;
+using Application.Features.Brands.Models;
 using AutoMapper;
+using Core.Persistence.Paging;
 using Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -25,6 +27,8 @@ namespace Application.Features.Brands.Profiles
             CreateMap<Brand, GetListedBrandResponse>().ReverseMap();
             CreateMap<Brand, DeletedBrandResponse>().ReverseMap();
             CreateMap<Brand, UpdatedBrandResponse>().ReverseMap();
+
+            CreateMap<IPaginate<Brand>, BrandListModel>().ReverseMap();
         }
     }
 }

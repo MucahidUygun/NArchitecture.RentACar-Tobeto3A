@@ -17,6 +17,7 @@ namespace Persistence.EntityTypeConfigurations
             builder.Property(x => x.DeletedDate).HasColumnName("DeletedDate");
 
             builder.HasOne(x => x.Car);
+            builder.HasQueryFilter(x => !x.DeletedDate.HasValue);
         }
     }
 }

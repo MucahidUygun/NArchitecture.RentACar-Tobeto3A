@@ -21,6 +21,7 @@ namespace Persistence.EntityTypeConfigurations
             builder.Property(x => x.DeletedDate).HasColumnName("DeletedDate");
 
             builder.HasMany(x => x.Models);
+            builder.HasQueryFilter(x => !x.DeletedDate.HasValue);
         }
     }
 }

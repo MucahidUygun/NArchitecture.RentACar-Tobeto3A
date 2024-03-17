@@ -1,6 +1,7 @@
 ﻿using Application.Features.Brands.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Pipelines.Caching;
 using Domain.Entities;
 using MediatR;
 using System;
@@ -11,8 +12,13 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Brands.Queries.GetList
 {
-    public class GetListBrandQuery : IRequest<List<GetListedBrandResponse>>
+    public class GetListBrandQuery : IRequest<List<GetListedBrandResponse>>,ICachableRequest
     {
+        public bool BypassCache { get; }
+
+        public string CacheKey => "brand-list";
+
+        public TimeSpan? SlidingExpiration { get; }
         public class GetListBrandQueryHandler : IRequestHandler<GetListBrandQuery, List<GetListedBrandResponse>>
         {
             private readonly IBrandRepository _brandRepository;
