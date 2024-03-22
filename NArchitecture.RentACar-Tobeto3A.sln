@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\webProjects\W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "src\webProjects\Persistence\Persistence.csproj", "{A6F0FD3C-BDF1-4B9C-BA7B-8FA919209E97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.CrossCutting", "Core.CrossCutting\Core.CrossCutting.csproj", "{F5CE4BE5-50E7-48DD-9A11-84801ECE7A93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCutting", "Core.CrossCutting\Core.CrossCutting.csproj", "{F5CE4BE5-50E7-48DD-9A11-84801ECE7A93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "Core.Application\Core.Application.csproj", "{F6168FA9-DDF4-4674-B853-18C18859367E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Application", "Core.Application\Core.Application.csproj", "{F6168FA9-DDF4-4674-B853-18C18859367E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Security", "src\corePackages\Core.Security\Core.Security.csproj", "{31B5469D-9259-4046-A0F8-2109AE36744F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{F6168FA9-DDF4-4674-B853-18C18859367E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6168FA9-DDF4-4674-B853-18C18859367E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6168FA9-DDF4-4674-B853-18C18859367E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B5469D-9259-4046-A0F8-2109AE36744F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B5469D-9259-4046-A0F8-2109AE36744F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B5469D-9259-4046-A0F8-2109AE36744F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B5469D-9259-4046-A0F8-2109AE36744F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{A6F0FD3C-BDF1-4B9C-BA7B-8FA919209E97} = {38F2378E-4C87-4DB9-B91D-CE33585EC78C}
 		{F5CE4BE5-50E7-48DD-9A11-84801ECE7A93} = {01DB1738-53B7-4E63-810D-AABA4D469370}
 		{F6168FA9-DDF4-4674-B853-18C18859367E} = {01DB1738-53B7-4E63-810D-AABA4D469370}
+		{31B5469D-9259-4046-A0F8-2109AE36744F} = {01DB1738-53B7-4E63-810D-AABA4D469370}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {697B8EF0-E331-4AEC-8F1D-CDD6C1C1AE75}
